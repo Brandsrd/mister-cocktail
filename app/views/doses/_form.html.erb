@@ -1,0 +1,16 @@
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+      <%= f.association :ingredient, include_blank: false %>
+  </div>
+
+  <div class="form-inputs">
+    <%= f.input :description, placeholder: 'i.e. 10 oz, 1L etc..' %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+
