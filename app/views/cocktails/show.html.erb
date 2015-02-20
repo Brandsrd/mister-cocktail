@@ -5,6 +5,7 @@
   <thead>
     <tr class="even">
     <th><h1><%= @cocktail.name %></h1></th>
+    <th><%= image_tag @cocktail.picture.url(:medium) %></th>
     <tr class="even">
     <th>Ingredient</th>
     <th>Dose</th>
